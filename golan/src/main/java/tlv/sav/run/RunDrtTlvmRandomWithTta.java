@@ -157,7 +157,7 @@ public class RunDrtTlvmRandomWithTta
 		drt.setMaxTravelTimeBeta(beta);
 		drt.setMaxWaitTime(maxWait);
 
-		drt.setRequestRejection(isEnableRequestRejection);
+//		drt.setRequestRejection(isEnableRequestRejection);
 
 		Controler controler = DrtControlerCreator.createControler(config, false);
 		controler.run();
