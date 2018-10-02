@@ -109,7 +109,7 @@ public class RunDrtTlvmRandomWithTta
 				//plan selector
 				StrategyConfigGroup.StrategySettings changeExpBetaStrategySettings = new StrategyConfigGroup.StrategySettings();
 				changeExpBetaStrategySettings.setStrategyName(DefaultPlanStrategiesModule.DefaultSelector.ChangeExpBeta.toString());
-				changeExpBetaStrategySettings.setWeight(0.7);
+				changeExpBetaStrategySettings.setWeight(0.7); 
 				config.strategy().addStrategySettings(changeExpBetaStrategySettings);
 				// time-mutation internal agents
 				StrategySettings timeMutatorInternal = new StrategySettings();
