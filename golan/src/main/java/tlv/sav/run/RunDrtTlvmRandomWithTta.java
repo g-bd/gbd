@@ -104,6 +104,8 @@ public class RunDrtTlvmRandomWithTta
 				config.plans().setSubpopulationAttributeName("subpopulation");
 				config.plans().setInputPersonAttributeFile("personAtrributes-with-subpopulation.xml");
 				config.strategy().setMaxAgentPlanMemorySize(5);
+				// innovation will be stop after iter * fraction . eg if 100 iters then at 80
+				config.strategy().setFractionOfIterationsToDisableInnovation(0.8);
 				//plan selector
 				StrategyConfigGroup.StrategySettings changeExpBetaStrategySettings = new StrategyConfigGroup.StrategySettings();
 				changeExpBetaStrategySettings.setStrategyName(DefaultPlanStrategiesModule.DefaultSelector.ChangeExpBeta.toString());
